@@ -2,6 +2,7 @@ package com.solvd.web;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.solvd.web.page.*;
+import com.solvd.web.uiobject.Product;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

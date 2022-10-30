@@ -5,8 +5,6 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 public class SearchFrame extends AbstractPage {
 
     @FindBy(xpath = "//*[@class='search__close']")
