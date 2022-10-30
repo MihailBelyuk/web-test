@@ -1,0 +1,7 @@
+[2022-10-30 11:41:11] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-10-30 11:41:11] [1] [INFO] TEST [web-test - openCatalogTest] STARTED at [14:41:11 2022-10-30]
+[2022-10-30 11:41:11] [1] [INFO] Starting driver session...
+[2022-10-30 11:41:13] [1] [INFO] Driver session started.
+[2022-10-30 11:41:13] [1] [INFO] INFO: opening url 'https://www.onliner.by'
+[2022-10-30 11:41:16] [1] [INFO] PASS: element 'catalogBtn' is clicked.
+[2022-10-30 11:41:16] [1] [INFO] TEST [web-test - openCatalogTest] PASSED at [14:41:16 2022-10-30]

@@ -1,0 +1,11 @@
+[2022-10-30 09:52:37] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-10-30 09:52:37] [1] [INFO] TEST [web-test - findLaptopsByManufacturerAndCompareNameTest] STARTED at [12:52:37 2022-10-30]
+[2022-10-30 09:52:37] [1] [INFO] Starting driver session...
+[2022-10-30 09:52:40] [1] [INFO] Driver session started.
+[2022-10-30 09:52:40] [1] [INFO] INFO: opening url 'https://www.onliner.by'
+[2022-10-30 09:52:44] [1] [INFO] PASS: element 'catalogBtn' is clicked.
+[2022-10-30 09:52:44] [1] [INFO] PASS: element 'computersAndNetwork' is clicked.
+[2022-10-30 09:52:47] [1] [INFO] PASS: element 'laptopsBtn' is clicked.
+[2022-10-30 09:52:49] [1] [INFO] PASS: element 'yourLocationConfirm' is clicked.
+[2022-10-30 09:53:01] [1] [INFO] PASS: element 'productPicture' is clicked.
+[2022-10-30 09:53:03] [1] [INFO] TEST [web-test - findLaptopsByManufacturerAndCompareNameTest] PASSED at [12:53:03 2022-10-30]

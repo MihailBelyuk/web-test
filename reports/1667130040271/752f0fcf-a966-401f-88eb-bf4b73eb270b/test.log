@@ -1,0 +1,8 @@
+[2022-10-30 11:40:42] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-10-30 11:40:42] [1] [INFO] TEST [web-test - chooseFirstSearchElementTest] STARTED at [14:40:42 2022-10-30]
+[2022-10-30 11:40:42] [1] [INFO] Starting driver session...
+[2022-10-30 11:40:46] [1] [INFO] Driver session started.
+[2022-10-30 11:40:46] [1] [INFO] INFO: opening url 'https://www.onliner.by'
+[2022-10-30 11:40:48] [1] [INFO] PASS: keys 'catana' are sent to element 'searchField'.
+[2022-10-30 11:40:49] [1] [INFO] PASS: element 'searchProduct' is clicked.
+[2022-10-30 11:40:54] [1] [INFO] TEST [web-test - chooseFirstSearchElementTest] PASSED at [14:40:54 2022-10-30]
