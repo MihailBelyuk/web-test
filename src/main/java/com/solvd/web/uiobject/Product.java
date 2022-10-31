@@ -11,10 +11,13 @@ public class Product extends AbstractUIObject {
     @FindBy(xpath = ".//*[@class='schema-product__description']//span[text()]")
     private ExtendedWebElement element;
 
-    @FindBy(xpath = ".//*[@class='product__title']")
+    @FindBy(xpath = ".//a(text())") // TODO: 10/31/2022 iframe part to be done
     private ExtendedWebElement searchProduct;
 
-    public Product(WebDriver driver, SearchContext searchContext) {
+    @FindBy(xpath = ".//span[text()]")
+    private ExtendedWebElement productName;
+
+      public Product(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
@@ -24,5 +27,9 @@ public class Product extends AbstractUIObject {
 
     public ExtendedWebElement getSearchProduct() {
         return searchProduct;
+    }
+
+    public String getProductName() {
+        return productName.getText();
     }
 }

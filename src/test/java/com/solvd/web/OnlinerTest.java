@@ -29,9 +29,8 @@ public class OnlinerTest implements IAbstractTest {
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("window.scrollBy(0,500)");
         productsPage.clickManufacturerCheckBox();
-        ProductPage productPage = productsPage.clickProductPicture();
-        String name = productPage.getProductName();
-        Assert.assertTrue(name.contains("82JU00A1PB"));
+        List<Product> products = productsPage.getProducts();
+        Assert.assertEquals(products.size(),30);
     }
 
     @Test
@@ -52,8 +51,8 @@ public class OnlinerTest implements IAbstractTest {
         catalogPage.clickComputersAndNetwork();
         ProductsPage productsPage = catalogPage.clickLaptops();
         productsPage.getYourLocationBlock().confirmLocation();
-        List<Product> products = productsPage.getLaptops();
-        Assert.assertEquals(products.size(), 30);
+        List<Product> products = productsPage.getProducts();
+        Assert.assertEquals(products.size(),30);
     }
 
     @Test

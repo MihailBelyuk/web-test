@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CatalogPage extends AbstractPage {
 
-    @FindBy(xpath = "//*[contains(@class,'__item-icon_id_2')]/..")
+    @FindBy(xpath = "//*[@class='catalog-navigation-classifier__item-title-wrapper' and contains(text(),'Компьютеры')]")
     private ExtendedWebElement computersAndNetwork;
 
     @FindBy(xpath = "//*[contains(@href,'medium=notebook')]")
