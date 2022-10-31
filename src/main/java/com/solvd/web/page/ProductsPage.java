@@ -2,6 +2,8 @@ package com.solvd.web.page;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractPage;
+import com.solvd.web.uiobject.Product;
+import com.solvd.web.uiobject.YourLocationBlock;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
