@@ -18,10 +18,7 @@ public class ProductsPage extends AbstractPage {
     @FindBy(xpath = "//*[@class='popover-style__content']")
     private YourLocationBlock yourLocationBlock;
 
-    @FindBy(xpath = "//*[@title='Lenovo Legion 5 15ACH6H 82JU00A1PB']")
-    private ExtendedWebElement productPicture;
-
-    @FindBy(xpath = "//*[@class='schema-product']")
+    @FindBy(xpath = "//*[@class='schema-product__title']")
     private List<Product> products;
 
     public ProductsPage(WebDriver driver) {
@@ -38,12 +35,7 @@ public class ProductsPage extends AbstractPage {
         return manufacturerCheckBox;
     }
 
-    public ProductPage clickProductPicture() {
-        productPicture.click();
-        return new ProductPage(getDriver());
-    }
-
-    public List<Product> getLaptops() {
+    public List<Product> getProducts() {
         return products;
     }
 

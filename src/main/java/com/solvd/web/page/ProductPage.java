@@ -7,18 +7,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPage extends AbstractPage {
 
-    @FindBy(xpath = "//*[@class='catalog-masthead']//*[contains(text(),'82JU00A1PB')]")
-    private ExtendedWebElement productName;
-
-    @FindBy(xpath = "//h1[contains(text(),'Catana RC CAT2500RC')]")
+    @FindBy(xpath = "//*[@class='catalog-masthead__title js-nav-header']")
     private ExtendedWebElement searchProductName;
 
     public ProductPage(WebDriver driver) {
         super(driver);
-    }
-
-    public String getProductName() {
-        return productName.getText();
     }
 
     public String getSearchProductName() {

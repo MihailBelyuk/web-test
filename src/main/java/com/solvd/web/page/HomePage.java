@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends AbstractPage {
 
-    @FindBy(xpath = "//*[@class='b-main-page-blocks-header-2 cfix']//*[@href='https://catalog.onliner.by']")
+    @FindBy(xpath = "//*[@class='b-main-navigation__text' and contains(text(),'Каталог')]")
     private ExtendedWebElement catalogBtn;
 
     @FindBy(xpath = "//*[@class='fast-search__input']")
@@ -26,9 +26,8 @@ public class HomePage extends AbstractPage {
         return new CatalogPage(getDriver());
     }
 
-    public SearchFrame typeSearch(String text) {
+    public void typeSearch(String text) {
         searchField.type(text);
-        return new SearchFrame(getDriver());
     }
 
     public ExtendedWebElement getSearchFrame() {
